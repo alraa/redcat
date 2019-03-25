@@ -1,0 +1,3201 @@
+{
+	"info": {
+		"_postman_id": "64a8f3bd-860b-41d1-b4c3-22ef68f5a087",
+		"name": "RED CAT STORE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADMIN",
+			"item": [
+				{
+					"name": "Категории, подкатегории, бренды, цвета",
+					"item": [
+						{
+							"name": "Категория - создать",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Виталик Кудлай\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/category",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Категория - посмотреть все",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/category",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Категория - одна категория",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/category/alt/Naik",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"category",
+										"alt",
+										"Naik"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Категория - обновить по id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Пум2а\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/category/5c0a2c8ac2a47f21f8b579b2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"category",
+										"5c0a2c8ac2a47f21f8b579b2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Категория - удалить по id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/category/5c0a2c8ac2a47f21f8b579b2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"category",
+										"5c0a2c8ac2a47f21f8b579b2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Подкатегория - создать",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Прозрачные\",\n    \"category_id\": \"5c0bc1c04a8b7d0be874a1d7\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/subcategory",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"subcategory"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Подкатегория - посмотреть все",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/subcategory",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"subcategory"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Подкатегория - посмотреть по полю",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/subcategory/_id/5c0bc2d50fcdaa0e4870489e",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"subcategory",
+										"_id",
+										"5c0bc2d50fcdaa0e4870489e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Подкатегория - обновить по id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Пум243r2354322а\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/subcategory/5c0bc2d50fcdaa0e4870489e",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"subcategory",
+										"5c0bc2d50fcdaa0e4870489e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Подкатегория - удалить по id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/subcategory/5c0bc2d50fcdaa0e4870489e",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"subcategory",
+										"5c0bc2d50fcdaa0e4870489e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Бренд - создать",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Суприм\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/brand",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"brand"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Бренд  - посмотреть все",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/brand",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"brand"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Бренд - посмотреть по _id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/brand/5c0bcd3065f13a09dc815507",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"brand",
+										"5c0bcd3065f13a09dc815507"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Бренд - посмотреть по alt",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/brand/alt/Guchchi",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"brand",
+										"alt",
+										"Guchchi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Бренд  - обновить по id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"ПААИПВАПА\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/brand/5c0a36f42565901c84efc972",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"brand",
+										"5c0a36f42565901c84efc972"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Бренд - удалить по id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/brand/5c0a36f42565901c84efc972",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"brand",
+										"5c0a36f42565901c84efc972"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Круд на товары",
+					"item": [
+						{
+							"name": "Создать товар",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"code\": \"1337\",\n\t\"name\": \"Штаны 100\",\n\t\"category_id\": \"12312312312\",\n\t\"subcategory_id\": \"12312312312\",\n\t\"brand_id\": \"12312312312\",\n\t\"color_id\": \"12312312312\",\n\t\"sex\": \"unisex\",\n\t\"seasons\": {\n\t\t\"winter\": false,\n\t\t\"spring\": true,\n\t\t\"summer\": true,\n\t\t\"autumn\": true\n\t},\n\t\"shortDescription\": \"кратное описание\",\n\t\"fullDescription\": \"Полное описание\",\n\t\"medias\": [\"массив ссылок\"],\n\t\"review360\": \"ссылка\",\n\t\"sizeX\": 100,\n\t\"sizeY\": 100,\n\t\"sizeZ\": 100,\n\t\"weight\": \"1000\",\n\t\"overprice\": 120,\n\t\"qualities\": {\n\t\t\"middle\": {\n\t\t\t\"self\": 1200,\n\t\t\t\"site\": 2000,\n\t\t\t\"images\": [\"массив ссылок - картинок, для каждого качества свои картинки\"]\n\t\t},\n\t\t\"high\": \"такой же объект\",\n\t\t\"premium\": \"такой же объект\"\n\t},\n\t\"provider\": {\n\t\t\"name\": \"название поставщика\",\n\t\t\"photos\": [\"ссылки на фотки qr кодов\"]\n\t},\n\t\"images\": [\n\t\t{\n\t\t\t\"category_id\": \"это если что по верстке, добавить образ\",\n\t\t\t\"subcategory_id\": \"хз как работает\",\n\t\t\t\"item_id\": \"но в верстке надо сделать чтоб можно было много добавлять\"\n\t\t}\n\t],\n\t\"youMightLike\": [\n\t\t{\n\t\t\t\"category_id\": \"это если что по верстке, добавить образ\",\n\t\t\t\"subcategory_id\": \"хз как работает\",\n\t\t\t\"item_id\": \"но в верстке надо сделать чтоб можно было много добавлять\"\n\t\t}\n\t],\n\t\"published\": true\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/item",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"item"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть все",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/item?",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"item"
+									],
+									"query": [
+										{
+											"key": "brand_id",
+											"value": "12312312312",
+											"disabled": true
+										},
+										{
+											"key": "color",
+											"value": "12312312312",
+											"disabled": true
+										},
+										{
+											"key": "color",
+											"value": "1345rfew3we",
+											"disabled": true
+										},
+										{
+											"key": "color",
+											"value": "a-etogo-tsveta-net",
+											"disabled": true
+										},
+										{
+											"key": "spring",
+											"value": "false",
+											"disabled": true
+										},
+										{
+											"key": "summer",
+											"value": "true",
+											"disabled": true
+										},
+										{
+											"key": "minPrice",
+											"value": "2000",
+											"disabled": true
+										},
+										{
+											"key": "maxPrice",
+											"value": "2000",
+											"disabled": true
+										},
+										{
+											"key": "sortWith",
+											"value": "qualities.middle.site",
+											"disabled": true
+										},
+										{
+											"key": "sortBack",
+											"value": "true",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "20",
+											"disabled": true
+										},
+										{
+											"key": "skip",
+											"value": "0",
+											"disabled": true
+										},
+										{
+											"key": "category_id",
+											"value": "12312312312",
+											"disabled": true
+										},
+										{
+											"key": "subcategory_id",
+											"value": "12312312312",
+											"disabled": true
+										},
+										{
+											"key": "sex",
+											"value": "unisex",
+											"description": "male || female || unisex",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "По _id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/item/5c0bab293d24eb26e05480de",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"item",
+										"5c0bab293d24eb26e05480de"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Обновить",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seasons\": {\n        \"winter\": true,\n        \"spring\": true,\n        \"summer\": true,\n        \"autumn\": true\n    },\n    \"price\": {\n        \"middle\": {\n            \"self\": 1200,\n            \"site\": 2000\n        },\n        \"high\": {\n            \"self\": 1400,\n            \"site\": 2500\n        },\n        \"premium\": {\n            \"self\": 1800,\n            \"site\": 3200\n        }\n    },\n    \"provider\": {\n        \"name\": \"Иван\",\n        \"photos\": []\n    },\n    \"brand_id\": \"12312312312\",\n    \"color_ids\": [\n        \"12312312312\",\n        \"12312312312\"\n    ],\n    \"sex\": \"unisex\",\n    \"shortDescription\": \"Это краткое описание\",\n    \"fullDescription\": \"Это полное описание\",\n    \"medias\": [],\n    \"review360\": null,\n    \"sizeX\": 12.6,\n    \"sizeY\": 120,\n    \"sizeZ\": 50,\n    \"weight\": 1000,\n    \"published\": true,\n    \"_id\": \"5c0bab293d24eb26e05480de\",\n    \"code\": \"1337\",\n    \"name\": \"Штаны 100\",\n    \"category_id\": \"12312312312\",\n    \"subcategory_id\": \"12312312312\",\n    \"images\": [],\n    \"youMightLike\": [],\n    \"alt\": \"SHtani-100\",\n    \"createdAt\": \"2018-12-08T11:29:45.394Z\",\n    \"updatedAt\": \"2018-12-08T11:29:45.394Z\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/item/5c0bb9b1a51b81299c15eabf",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"item",
+										"5c0bb9b1a51b81299c15eabf"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Удалить",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/item/5c0892bf00b24b138089615d",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"item",
+										"5c0892bf00b24b138089615d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Отобразить один товар (убрать из скрытых)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/item/5c1f0d7761ece219ac664004/action/show",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"item",
+										"5c1f0d7761ece219ac664004",
+										"action",
+										"show"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Скрыть один товар",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/item/5c1f0d7761ece219ac664004/action/hide",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"item",
+										"5c1f0d7761ece219ac664004",
+										"action",
+										"hide"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Все для юзеров",
+					"item": [
+						{
+							"name": "Создать акк, дать права, выслать на почту доступы",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Даня\",\n    \"email\": \"danis.sliceplanet@gmail.com\",\n    \"accountMeta\": {\n        \"admin\": true,\n        \"providers\": true,\n        \"offers\": true,\n        \"clients\": true,\n        \"items\": true,\n        \"confirmed\": true\n    }\n}\t"
+								},
+								"url": {
+									"raw": "localhost:80/api/admin/manually-create-account",
+									"host": [
+										"localhost"
+									],
+									"port": "80",
+									"path": [
+										"api",
+										"admin",
+										"manually-create-account"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть всех",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/user?skip=2&limit=1&nameReg=Даня",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"user"
+									],
+									"query": [
+										{
+											"key": "skip",
+											"value": "2"
+										},
+										{
+											"key": "limit",
+											"value": "1"
+										},
+										{
+											"key": "sortBy",
+											"value": "personMeta.name",
+											"disabled": true
+										},
+										{
+											"key": "sortWith",
+											"value": "1",
+											"description": "1 - от меньшего (по алфавиту), -1 - наоборот, от большего",
+											"disabled": true
+										},
+										{
+											"key": "nameReg",
+											"value": "Даня"
+										},
+										{
+											"key": "nameReg",
+											"value": "Кудлай кудлай",
+											"disabled": true
+										},
+										{
+											"key": "nameReg",
+											"value": "Кудлай Виталик ",
+											"description": "все эти запросы работают, кудлай  находится",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "По _id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/user/5c0a26fea8dc6a336884372a",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"user",
+										"5c0a26fea8dc6a336884372a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Обновить",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"accountMeta\": {\n        \"admin\": true,\n        \"providers\": true,\n        \"offers\": true,\n        \"clients\": true,\n        \"items\": true,\n        \"confirmed\": true\n    }\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/user/5c0a3aa3c0b7cf1ec0022bdc",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"user",
+										"5c0a3aa3c0b7cf1ec0022bdc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Удалить",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/user/5c0a26fea8dc6a336884372a",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"user",
+										"5c0a26fea8dc6a336884372a"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Управление контентом на сайте",
+					"item": [
+						{
+							"name": "Создать страницу",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"seoTitle\": \"Возвраты\",\n\t\"name\": \"Возвраты\",\n\t\"alt\": \"vozvrati\",\n\t\"html\": \"<b>html код страницы о <em>Возвратах</em></b>\",\n\t\"seoDescription\": \"Краткое описание возвратов для seo\",\n\t\"place\": \"header\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/page",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"page"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть список страниц",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/page",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"page"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть страницу по id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/page/5c0f98443b641426b48b76eb",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"page",
+										"5c0f98443b641426b48b76eb"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть страницу по alt",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/restful/page/alt/dostavka-i-oplata",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"restful",
+										"page",
+										"alt",
+										"dostavka-i-oplata"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть страницу по alt Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/page/5c0f98443b641426b48b76eb",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"page",
+										"5c0f98443b641426b48b76eb"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "просмотр и управление заказами",
+					"item": [
+						{
+							"name": "просмотр всех заказов (+ пагинация)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/order?skip=0&limit=1&sortBy=createdAt&sortWith=-1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"order"
+									],
+									"query": [
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "1"
+										},
+										{
+											"key": "sortBy",
+											"value": "createdAt"
+										},
+										{
+											"key": "sortWith",
+											"value": "-1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "просмотр всех заказов (+ пагинация) с товарами (для страницы поставщиков)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/orders-with-items?skip=0&limit=1&sortBy=createdAt&sortWith=-1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"orders-with-items"
+									],
+									"query": [
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "1"
+										},
+										{
+											"key": "sortBy",
+											"value": "createdAt"
+										},
+										{
+											"key": "sortWith",
+											"value": "-1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "изменить статус товара в заказе (читать описание)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/order/5c1cef8b9756ec09a4480709/item/5c1cef8b9756ec09a448070c/set-status/out_of_stock",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"order",
+										"5c1cef8b9756ec09a4480709",
+										"item",
+										"5c1cef8b9756ec09a448070c",
+										"set-status",
+										"out_of_stock"
+									]
+								},
+								"description": "От статуса товара меняется статус всего заказа"
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть все товары в заказе (для страницы заказов)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "",
+										"type": "text",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/order/5c333903bc38471bd424c873/items",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"order",
+										"5c333903bc38471bd424c873",
+										"items"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть все товары в заказе - версия для страницы поставщиков (можено передать несколько айдишников)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "",
+										"type": "text",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/order/items?order_id=5c333903bc38471bd424c873",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"order",
+										"items"
+									],
+									"query": [
+										{
+											"key": "order_id",
+											"value": "5c333903bc38471bd424c873",
+											"description": "можно неколько айдишников заказов"
+										},
+										{
+											"key": "order_id",
+											"value": "5c333903bc38471bd424c874",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "просмотр заказа по id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/order/5c0fc98b05151d3774231f27",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"order",
+										"5c0fc98b05151d3774231f27"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Обновить заказ",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"paid\": false,\n    \"tracks\": [],\n    \"_id\": \"5c0fc98b05151d3774231f27\",\n    \"name\": \"Игорь\",\n    \"surname\": \"Нахимов\",\n    \"patronymic\": \"Иванов\",\n    \"email\": \"danis.zp.123@gmail.com\",\n    \"phone\": \"380555555555\",\n    \"country\": \"Ukraine\",\n    \"city\": \"Запорожье\",\n    \"address\": \"улица и дом...\",\n    \"items\": [\n        {\n            \"_id\": \"5c0fc98b05151d3774231f28\",\n            \"item_id\": \"5c0bb9b1a51b81299c15eabf\",\n            \"quality\": \"high\",\n            \"count\": 12\n        }\n    ],\n    \"type\": \"retail\",\n    \"user_id\": \"5c0bb903a51b81299c15eabd\",\n    \"statusHistory\": [\n        {\n            \"timestamp\": \"2018-12-11T14:28:27.438Z\",\n            \"status\": \"new\"\n        }\n    ],\n    \"code\": \"R1001\",\n    \"createdAt\": \"2018-12-11T14:28:27.446Z\",\n    \"updatedAt\": \"2018-12-11T14:28:27.446Z\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/admin/restful/order/5c0fc98b05151d3774231f27",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"order",
+										"5c0fc98b05151d3774231f27"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "возвраты из внутреннего счета",
+					"item": [
+						{
+							"name": "Просмотреть все возвраты (с пагинацией)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1YzBiYjkwM2E1MWI4MTI5OWMxNWVhYmQiLCJlbWFpbCI6InBpcm96a292X2tvbHlhQGdtYWlsLmNvbSIsInRpbWVzdGFtcCI6IjIwMTgtMTItMTRUMTU6MDE6MDEuMDI5WiJ9.CYFi0IMXh90oudDKzpuvOobIcf88-BMJ2drq5Z8Uu90"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:80/api/admin/restful/money-withdraw",
+									"host": [
+										"localhost"
+									],
+									"port": "80",
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"money-withdraw"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Посмотреть один возврат по _id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1YzBiYjkwM2E1MWI4MTI5OWMxNWVhYmQiLCJlbWFpbCI6InBpcm96a292X2tvbHlhQGdtYWlsLmNvbSIsInRpbWVzdGFtcCI6IjIwMTgtMTItMTRUMTU6MDE6MDEuMDI5WiJ9.CYFi0IMXh90oudDKzpuvOobIcf88-BMJ2drq5Z8Uu90"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:80/api/admin/restful/money-withdraw/_id/5c2375f98969152cf8dd0623",
+									"host": [
+										"localhost"
+									],
+									"port": "80",
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"money-withdraw",
+										"_id",
+										"5c2375f98969152cf8dd0623"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Подтвердить возврат",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1YzBiYjkwM2E1MWI4MTI5OWMxNWVhYmQiLCJlbWFpbCI6InBpcm96a292X2tvbHlhQGdtYWlsLmNvbSIsInRpbWVzdGFtcCI6IjIwMTgtMTItMTRUMTU6MDE6MDEuMDI5WiJ9.CYFi0IMXh90oudDKzpuvOobIcf88-BMJ2drq5Z8Uu90"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:80/api/admin/restful/money-withdraw/_id/5c224fdde817603f9482dfb3/confirm",
+									"host": [
+										"localhost"
+									],
+									"port": "80",
+									"path": [
+										"api",
+										"admin",
+										"restful",
+										"money-withdraw",
+										"_id",
+										"5c224fdde817603f9482dfb3",
+										"confirm"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Админ загружает файл",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/admin/file",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"file"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Админ загружает файл в base64",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"base64\": \"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\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/admin/file64",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"file64"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "Посмотреть свой профиль",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/user/restful/profile/me",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"restful",
+								"profile",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Обновить свой профиль",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"accountMeta\": {\n            \"admin\": true,\n            \"providers\": false,\n            \"offers\": false,\n            \"clients\": false,\n            \"items\": false,\n            \"confirmed\": false\n        },\n        \"personMeta\": {\n            \"name\": \"Данис\",\n            \"surname\": null,\n            \"patronymic\": null,\n            \"city\": null,\n            \"index\": null,\n            \"address\": null,\n            \"birthDate\": \"1995-12-05T18:51:19.396Z\",\n            \"growthWeight\": null,\n            \"footSize\": null,\n            \"sex\": \"male\"\n        },\n        \"socials\": {\n            \"twitter\": null,\n            \"facebook\": null,\n            \"instagram\": null,\n            \"vk\": null\n        },\n        \"balance\": 12312,\n        \"_id\": \"5c0bb903a51b81299c15eabd\",\n        \"delivery\": {\n            \"country\": \"ru\",\n            \"city\": \"moscow\",\n            \"fullAddress\": \"Улица пушкина, дом колотушкина... \",\n            \"index\": \"123321\"\n        },\n        \"email\": \"pirozkov_kolya@gmail.com\",\n        \"wishList\": [],\n        \"createdAt\": \"2018-12-08T12:28:51.667Z\",\n        \"updatedAt\": \"2018-12-25T18:42:42.349Z\",\n        \"addresses\": []\n    }"
+						},
+						"url": {
+							"raw": "{{host}}/api/user/restful/profile/me",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"restful",
+								"profile",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Создать заказ (корзину нужно передать в теле)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"deliveryType\": \"ems\",\n    \"paymentType\": \"yakassa-prepayment\",\n    \"yakassaPaymentType\": \"bank_card\",\n    \"name\": \"Людвиг Ван Бетховен\",\n    \"email\": \"danis.sliceplanet@gmail.com\",\n    \"phone\": \"+7999999999\",\n    \"country\": \"russia\",\n    \"province\": \"Москва\",\n    \"city\": \"Москва\",\n    \"address\": \"улица и дом...\",\n    \"growthWeight\": \"180, 65\",\n    \"footSize\": \"42\",\n    \"basket\": [\n        {\n        \t\"item_id\": \"5c3860593be52e3cb099f7f7\",\n        \t\"count\": 1,\n        \t\"quality\": \"high\",\n        \t\"size\": null\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/user/create-order",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"create-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Просмотр свои заказы",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/user/restful/order/my",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"restful",
+								"order",
+								"my"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Просмотр одного заказа",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/user/restful/order/my/5c0fc98b05151d3774231f27",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"restful",
+								"order",
+								"my",
+								"5c0fc98b05151d3774231f27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Создать заявку на вывод средств из внутреннего счета",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sum\": 12,\n\t\"card\": \"aaaaaaaaaaaaaa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/user/money-withdraw",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"money-withdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Посмотреть свои заявки",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/user/money-withdraw",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"money-withdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Посмотреть одну заявку",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/user/money-withdraw/_id/5c224da45702f63fe453d3bf",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"money-withdraw",
+								"_id",
+								"5c224da45702f63fe453d3bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Сменить пароль",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"super\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/user/change-password",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUBLIC",
+			"item": [
+				{
+					"name": "подтверждения почты и смены пароля (для ссылки в почте)",
+					"item": [
+						{
+							"name": "подтвердить заявку на сброс пароля",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/reset-password-confirm?secret=c8cf50ac757aa0492bb97652137d41ae3a3a675c2fe03c59e118f59f04e71096b5e3236eeb7193ed361a4911f7c5e368b9ee18317111efe9cd0fcf3a63914b6e",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"reset-password-confirm"
+									],
+									"query": [
+										{
+											"key": "secret",
+											"value": "c8cf50ac757aa0492bb97652137d41ae3a3a675c2fe03c59e118f59f04e71096b5e3236eeb7193ed361a4911f7c5e368b9ee18317111efe9cd0fcf3a63914b6e",
+											"description": "Ссылка сработает только при первом запросе и действительна 1 час после создания (или день, уже не помню...)"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "подтвердить новый аккаунт",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/public/confirm-registration?secret=52b469088bfbef5423cf9ef9142b80de786615cfeb5da637764e5a0804c79b15d148f1305db7317f8eb58936f63ac131895ede437122875ac8a9e4a75d210c21",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"public",
+										"confirm-registration"
+									],
+									"query": [
+										{
+											"key": "secret",
+											"value": "52b469088bfbef5423cf9ef9142b80de786615cfeb5da637764e5a0804c79b15d148f1305db7317f8eb58936f63ac131895ede437122875ac8a9e4a75d210c21",
+											"description": "Ссылка сработает только при первом запросе и действительна 1 час после создания (или день, уже не помню...)"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ДЕРЕВО КАТЕГОРИЙ И ПОДКАТЕГОРИЙ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/categories-tree",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"categories-tree"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Просмотр товаров",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/restful/item?",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"restful",
+								"item"
+							],
+							"query": [
+								{
+									"key": "brand_ids",
+									"value": "5c385fd13be52e3cb099f7f5",
+									"disabled": true
+								},
+								{
+									"key": "brand_ids",
+									"value": "5c3346553001c62b747be9a",
+									"disabled": true
+								},
+								{
+									"key": "_id",
+									"value": "5c3e891d00efc23264595d5a",
+									"disabled": true
+								},
+								{
+									"key": "_id",
+									"value": "5c3860593be52e3cb099f7f7",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Один товар по id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/restful/item/_id/5c1f00f0633da91e44900531",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"restful",
+								"item",
+								"_id",
+								"5c1f00f0633da91e44900531"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Один товар по alt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/restful/item/alt/SHtani-100",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"restful",
+								"item",
+								"alt",
+								"SHtani-100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Запросить сброс пароля (ссылку на почту)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"novuy2@mail.ru\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/public/reset-password-request",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"reset-password-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Подтвердить сброс пароля (происходит при переходе по ссылке на почту)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/reset-password-confirm?secret=7717ae1ae8ec60cfd1c17bb58ae03288b84f2b1e235b11d753a029ba5c6b22be9a33249686d5d820c884995f3c1ed331fbcec44538a13f49a3b2d72d09d68063",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"reset-password-confirm"
+							],
+							"query": [
+								{
+									"key": "secret",
+									"value": "7717ae1ae8ec60cfd1c17bb58ae03288b84f2b1e235b11d753a029ba5c6b22be9a33249686d5d820c884995f3c1ed331fbcec44538a13f49a3b2d72d09d68063"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "поменять пароль, если знаешь старый",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"danis.sliceplanet@gmail.com\",\n    \"password\": \"1df23fad1b01c087\",\n    \"newPassword\": \"super\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/public/reset-password-with-old",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"reset-password-with-old"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получить цену доставки для определенного веса и типа доставки Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/count-delivery-price?type=stdExpress_EXPRESS&weight=30000&country=belarus",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"count-delivery-price"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "stdExpress_EXPRESS"
+								},
+								{
+									"key": "weight",
+									"value": "30000"
+								},
+								{
+									"key": "country",
+									"value": "belarus"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Регистрация, логин",
+			"item": [
+				{
+					"name": "Регистрация",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\" : \"novuy2@mail.ru\",\r\n  \"password\": \"super\",\r\n  \"personMeta\" : {\r\n    \"name\" : \"Даня\",\r\n    \"birthDate\": 818189479396,\r\n    \"growth\" : 180,\r\n    \"weight\" : 65,\r\n    \"footSiae\" : 42,\r\n    \"sex\" : \"male\"\r\n  },\r\n  \"delivery\" : {\r\n    \"country\" : \"ru\",\r\n    \"city\" : \"moscow\",\r\n    \"fullAddress\" : \"Улица пушкина, дом колотушкина... \",\r\n    \"index\" : \"123321\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "localhost:80/api/public/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"public",
+								"registration"
+							]
+						},
+						"description": "Пользователь создает аккаунт"
+					},
+					"response": []
+				},
+				{
+					"name": "Вход",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\" : \"danis.sliceplanet@gmail.com\",\n  \"password\": \"super\"\n}"
+						},
+						"url": {
+							"raw": "localhost:80/api/public/login",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"public",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "это было для аутсорсера",
+			"item": [
+				{
+					"name": "Категория - посмотреть все",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/restful/category",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"restful",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Подкатегория - посмотреть все",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/restful/subcategory",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"restful",
+								"subcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Бренд - посмотреть все",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/restful/brand",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"restful",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Цвет - посмотреть все",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/restful/color",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"restful",
+								"color"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Просмотр товаров с сортировкой и пагинацией",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/public/restful/item?devProjection=true&sortBy=middlePrice&sortBack=true",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"restful",
+								"item"
+							],
+							"query": [
+								{
+									"key": "color_id",
+									"value": "5c1ef9a726b18b1d580afdd3",
+									"description": "Вернет все объекты с таким цветов",
+									"disabled": true
+								},
+								{
+									"key": "color_id",
+									"value": "5c1ef9ab26b18b1d580afdd4",
+									"description": "можно несколько цветов, вернет все объекты, где есть такой цвет",
+									"disabled": true
+								},
+								{
+									"key": "color_id",
+									"value": "5c1ef9b326b18b1d580afdd6",
+									"description": "если выбрать все возможные варинты - вернет все объекты",
+									"disabled": true
+								},
+								{
+									"key": "category_id",
+									"value": "5c1ef7b926b18b1d580afdc6",
+									"description": "так же как цвета, можно задать несколько",
+									"disabled": true
+								},
+								{
+									"key": "category_id",
+									"value": "5c1ef7c626b18b1d580afdc9",
+									"description": "если выбрать все возможные варинты - вернет все объекты",
+									"disabled": true
+								},
+								{
+									"key": "subcategory_id",
+									"value": "5c1ef83c26b18b1d580afdcc",
+									"description": "так же как цвета, можно задать несколько",
+									"disabled": true
+								},
+								{
+									"key": "subcategory_id",
+									"value": "5c1ef84a26b18b1d580afdcd",
+									"description": "если выбрать все возможные варинты - вернет все объекты",
+									"disabled": true
+								},
+								{
+									"key": "brand_id",
+									"value": "5c0bcd3565f13a09dc815508",
+									"description": "так же как цвета, можно задать несколько",
+									"disabled": true
+								},
+								{
+									"key": "brand_id",
+									"value": "5c1efe3861ece219ac663ffe ",
+									"description": "если выбрать все возможные варинты - вернет все объекты",
+									"disabled": true
+								},
+								{
+									"key": "sex",
+									"value": "unisex",
+									"description": "так же как цвета, можно задать несколько",
+									"disabled": true
+								},
+								{
+									"key": "sex",
+									"value": "male",
+									"description": "если выбрать все возможные варинты - вернет все объекты",
+									"disabled": true
+								},
+								{
+									"key": "sex",
+									"value": "female",
+									"disabled": true
+								},
+								{
+									"key": "devProjection",
+									"value": "true"
+								},
+								{
+									"key": "sortBy",
+									"value": "middlePrice"
+								},
+								{
+									"key": "sortBack",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "help page - страница помощи",
+			"item": [
+				{
+					"name": "top - блок видео",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/help/video",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"help",
+										"video"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "set",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"url\": \"blahbla123123h\"\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/help/video",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"help",
+										"video"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "top - блоки на верху страницы",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/help/top",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"help",
+										"top"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"ДОСТАВКА\",\n    \"icon\": \"link\",\n    \"boxes\": [\n        {\n            \"name\": \"ДОСТАВКА\",\n            \"short\": \"Краткое описание для http://test.sliceplanet.com/redcatstore/help_page.html\",\n            \"html\": \"<b>hello world</b>\"\n        },\n        {\n            \"name\": \"Оплата\",\n            \"short\": \"Краткое описание для http://test.sliceplanet.com/redcatstore/help_1page.html\",\n            \"html\": \"<b>hello world</b>\"\n        }\n    ],\n    \"order\": 100\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/help/top",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"help",
+										"top"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": 100,\n    \"_id\": \"5c6beb894eda0115f4ec81da\",\n    \"name\": \"ДОСТАВКА\",\n    \"icon\": \"link\",\n    \"boxes\": [\n        {\n            \"_id\": \"5c6beb894eda0115f4ec81dc\",\n            \"name\": \"ДОСТАВКА\",\n            \"short\": \"Краткое описание для http://test.sliceplanet.com/redcatstore/help_page.html\",\n            \"html\": \"<b>hello world</b>\"\n        },\n        {\n            \"_id\": \"5c6beb894eda0115f4ec81db\",\n            \"name\": \"Оплата\",\n            \"short\": \"Краткое описание для http://test.sliceplanet.com/redcatstore/help_1page.html\",\n            \"html\": \"<b>hello world</b>\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/help/top/5c6beb894eda0115f4ec81da",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"help",
+										"top",
+										"5c6beb894eda0115f4ec81da"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/help/top/5c6beb894eda0115f4ec81da",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"help",
+										"top",
+										"5c6beb894eda0115f4ec81da"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "get all help content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/help?token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"help"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create delivery block (круд аналогично блокам вверху траницы)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"icon\": \"link\",\n    \"name\": \"ДОСТАВКА\",\n    \"html\": \"<b>текст html для отображения в попапе</b>\",\n    \"order\": 100\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/api/help/delivery",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"help",
+								"delivery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create contact block (круд аналогичен блоку вверху страницы)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "{{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"icon\": \"link\",\n    \"name\": \"ДОСТАВКА\",\n    \"href\": \"<b>текст html для отображения в попапе</b>\",\n    \"usePopup\": \"<b>текст html для отображения в попапе</b>\",\n    \"order\": 100\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/api/help/contact",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"help",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "trading actions",
+			"item": [
+				{
+					"name": "get all trading actions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/trading-actions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"trading-actions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/trading-actions/5c6e5fbe59066505c07fe9b7",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"trading-actions",
+								"5c6e5fbe59066505c07fe9b7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"active\": true,\n    \"icon\": \"link to icon\",\n    \"description\": \"descr100\",\n    \"itemIds\": [\"XXXXXXXXX\"],\n    \"bonusItemId\": \"XXXXXX\",\n    \"discount\": \"10\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/trading-actions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"trading-actions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"active\": true,\n    \"icon\": \"link to icon\",\n    \"description\": \"descr100\",\n    \"itemIds\": [\"update\"],\n    \"bonusItemId\": \"XXXXXX\",\n    \"discount\": \"10\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/trading-actions/5c6e5fcc59066505c07fe9b8",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"trading-actions",
+								"5c6e5fcc59066505c07fe9b8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/trading-actions/5c6e5fcc59066505c07fe9b8",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"trading-actions",
+								"5c6e5fcc59066505c07fe9b8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d8543c71-c6a5-4568-81c0-763c2b1aa7ce",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "af73b581-a894-4aa2-add0-28594573eed7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "22fbdb22-ecfc-477d-897a-e7ba235e704b",
+			"key": "token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1YzUyZThkYmE2NmJjZjA4ZjA4ZTE1MjYiLCJlbWFpbCI6ImRhbmlzLnNsaWNlcGxhbmV0QGdtYWlsLmNvbSIsInRpbWVzdGFtcCI6IjIwMTktMDItMTJUMTA6NDg6MjUuMDMwWiJ9.AhV7kSdeWzLNpE47ShC6F09Pi4pLD2Gbv09DeXytlZ4",
+			"type": "string"
+		},
+		{
+			"id": "719e0196-db2a-461b-b966-4b1ab3fb7a30",
+			"key": "host",
+			"value": "localhost:8000",
+			"type": "string"
+		}
+	]
+}

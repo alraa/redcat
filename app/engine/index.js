@@ -1,0 +1,12 @@
+ENGINE = new Promising({ logs: true })
+
+require('./user')
+require('./category')
+require('./subcategory')
+require('./color')
+require('./etc')
+require('./brand')
+require('./item')
+require('./nodemailer')
+require('./order')
+require('./page')
