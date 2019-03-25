@@ -1,0 +1,31 @@
+.result-info{
+	font:{
+		size:18px;
+		
+		weight:300;
+	}
+	color:#4b4b4b;
+	margin-bottom:140px;
+}
+
+.result .you-can-like .bye-look__header{
+	text-align:left;
+}
+
+.result .cataloge_bottom-nav{
+	margin: 58px auto 0;
+	margin-bottom:30px;
+}
+ 
+.result .you-can-like .megalike-slider .slick-dots {
+    margin-top: 5px;
+}
+
+@media screen and (max-width:479px){
+	.result-info{
+		font:{
+			size:14px;
+		}
+		margin-bottom:50px;
+	}
+}

@@ -1,0 +1,246 @@
+.registration .enter-popup{
+	display:block;
+	position:static;
+	max-width:480px;
+	
+
+	.enter-popup-form{
+		border:none;
+		margin:0;
+		max-width:480px;
+		
+
+
+	}
+	.registration__header{
+		font-family: "Cuprum";
+	    font-size: 22px;
+	    color: #3b3b3b;
+	    text-align: left;
+	    padding-bottom: 10px;
+	    margin-bottom: 35px;
+	}
+
+	.enter-input{
+		margin-left:0;
+	}
+
+	.enter-popup-passward-block{
+		justify-content: flex-start;
+		flex-wrap:wrap;
+		max-width:480px;
+	}
+	.enter-popup-passward__link{
+		color:#2f3a89;
+			font:{
+				size:12px;
+				weight:300;
+				}
+			text-decoration:underline;
+		}
+	.reg-popup__btn input{
+		margin-left:70px;
+	}
+}
+
+
+
+.reg-attention{
+	display:none;
+	position:absolute;
+	right:0;
+	bottom:140px;
+	color:$red;
+	&:before{
+		content:url(../img/attention_icon.png);
+		left: -23px;
+    	top: -2px;
+    	position: absolute;
+	}
+}
+
+
+.check-for-reg{
+	max-width:266px;
+	margin:100px auto 100px;
+	text-align:center;
+	.check-for-reg__img{
+		height:71px;
+		position:relative;
+		margin-bottom:25px;
+		img{
+			position:bsolute;
+			left:0;
+			right:0;
+			margin:auto;
+		}
+	}
+	.check-for-reg__text{
+		text-align:center;
+		margin-bottom:58px;
+	}
+
+	.check-for-reg__btn{
+	display:block;
+		padding:10px 10px;
+		background:#3b3b3b;
+		text-transform:uppercase;
+		color:#fff;
+		font:{
+			family:"Cuprum";
+			weight:700;
+		}
+		width:158px;
+		margin:0 auto;
+	}
+}
+
+.succes-reg__header-block{
+	display:flex;
+	justify-content:space-between;
+}
+
+.succes-reg__header{
+	font:{
+		family:"Cuprum";
+		size:22px;
+	}
+	color:#3b3b3b;
+	text-align:left;
+	padding-bottom:10px;
+	
+}
+
+.succes-reg__subheader{
+	font:{
+		weight:300;
+	}
+	color:#3b3b3b;
+	max-width:368px;
+	padding-bottom:10px;
+	line-height:20px;
+
+}
+
+.succes-reg__miss{
+	font:{
+		weight:300;
+		size:12px;
+	}
+	position:relative;
+	padding-right:25px;
+	&:after{
+		position:absolute;
+		content:url(../img/miss_arrow.png);
+		right:0;
+	}
+}
+
+.succes-reg__name{
+	color:#000;
+	opacity:0.38;
+	font:{
+		size:12px;
+	}
+	padding-bottom:5px;
+}
+
+.succes-reg__item{
+	max-width:265px;
+	margin-bottom:30px;
+	width:100%;
+	position:relative;
+	border-bottom: 1px solid #000;
+	input[type="text"] {
+	    border: none;
+	    padding: 6px 10px 7px 0;
+	    width: 100%;
+	    font-size: 16px;
+	    color: #000;
+	}
+}
+
+.succes-reg__location-text{
+	font:{
+		size:12px;
+	}
+	color:#000;
+	margin:20px 0 30px;
+	span{
+		position:relative;
+		padding-left:20px;
+		cursor:pointer;
+		&:before{
+			position:absolute;
+			content:url(../img/reg-geo.png);
+			left:3px;
+		}
+	}
+}
+
+.succes-reg__info{
+	display:flex;
+	max-width:825px;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	.succes-reg__item{
+		width:242px;
+	}
+}
+
+
+/*forgot popup*/
+
+.enter-popup-info.forgot-popup-info{
+	max-width:195px;
+	margin:20px auto 30px;
+	line-height:20px;
+	text-align:center;
+}
+
+
+/*check you email*/
+
+.enter-popup{
+	.check-for-reg{
+	margin:35px auto 35px;
+	.check-for-reg__text{
+		margin-bottom:0;
+	}
+	
+}
+.reg-popup__btn input{
+		width:148px;
+		text-align:center;
+	}
+} 
+
+
+
+
+
+@media screen and (max-width:1023px){
+	.succes-reg__info .succes-reg__item{
+		max-width:230px;
+	}
+}
+
+@media screen and (max-width:767px){
+
+	.succes-reg__info{
+		max-width:590px;
+		margin:0 auto;
+	}
+	.succes-reg__info .succes-reg__item{
+		max-width:242px;
+	}
+}
+
+@media screen and (max-width:479px){
+
+	.succes-reg__header{
+		font:{
+			size:18px;
+		}
+	}
+}

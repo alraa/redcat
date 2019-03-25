@@ -1,0 +1,25 @@
+/* reset */
+$min-width: 320px; 
+$max-width: 1300px; 
+$base-bg: #FFF; 
+$base-font-size: 14px; 
+$base-line-height: 18px; 
+$base-font-family: "Roboto", sans-serif; 
+$custom-font-family: 'Cuprum', sans-serif; 
+$link-color: #787878;
+$default-transition:all 0.2s linear;
+$red :#f7002c;
+
+/* main variables */
+
+//text, titles
+$text-color: #464646;
+$title-color: #3b3b3b;
+$title-font-family: $custom-font-family;
+
+$font-size-h1: 36px;
+$line-height-h1: 42px;
+$font-size-h2: 72px;
+$line-height-h2: 70px;
+$font-size-h3: 28px;
+$line-height-h3: 32px;

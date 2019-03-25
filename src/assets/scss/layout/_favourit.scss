@@ -1,0 +1,73 @@
+.favorite{
+	.add-to-cart__btn{
+		width:133px;
+		font:{
+			size:12px;
+		}
+		font-family: "Cuprum";
+		color:#3b3b3b;
+		opacity:0.25;
+		border:1px solid #3b3b3b;
+		padding: 0px 3px;
+		line-height: 28px;
+		background:#fff;
+		margin-top:10px;
+		cursor:pointer;
+	}
+	.cataloge-block__item.price,
+	.cataloge-block__item.oldprice{
+		display:inline-block;
+	}
+
+	.cataloge-block{
+		transition:0.3s linear;
+		margin-bottom: 32px;
+	}
+
+	.cataloge-block:hover{
+		transform: translateY(-10px);
+		
+	}
+	.cataloge-block:hover .add-to-cart__btn{
+		opacity:1;
+		border-width:2px;
+		margin-top: 9px;
+		margin-bottom: -1px;
+	}
+} 
+
+.favorite .breadcramps {
+	margin-top: 5px;
+}
+
+.favorite .cataloge_bottom-nav {
+	margin: 52px auto 0;
+}
+
+@media screen and (max-width: 1023px) { 
+	.favorite .cataloge-block:hover {
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 767px) { 
+	.favorite .cataloge-block {
+		margin-bottom: 5px;
+	}
+	.favorite .cataloge-container {
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.favorite .cataloge-block__item.oldprice {
+		font-size: 14px;
+		padding-right: 0;
+	}
+	.cataloge-block__item.price {
+		font-size: 14px;
+	}
+	.favorite .cataloge-block__info.discount .cataloge-block__item.price {
+		width: 70px;
+	}
+}

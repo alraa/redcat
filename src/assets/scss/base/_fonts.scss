@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Thin/Roboto-Thin.eot?#iefix') format('embedded-opentype'),  
+	url('../fonts/Roboto-Thin/Roboto-Thin.woff') format('woff'), 
+	url('../fonts/Roboto-Thin/Roboto-Thin.ttf')  format('truetype'), 
+	url('../fonts/Roboto-Thin/Roboto-Thin.svg#Roboto-Regular') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light/Roboto-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light/Roboto-Light.ttf')  format('truetype'), url('../fonts/Roboto-Light/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Roboto-Regular/Roboto-Regular.woff') format('woff'), 
+  url('../fonts/Roboto-Regular/Roboto-Regular.ttf')  format('truetype'), 
+  url('../fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'), 
+    url('../fonts/Roboto-Medium/Roboto-Medium.ttf')  format('truetype'),
+     url('../fonts/Roboto-Medium/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold/Roboto-Bold.eot?#iefix') format('embedded-opentype'),  	url('../fonts/Roboto-Bold/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold/Roboto-Bold.ttf')  format('truetype'), url('../fonts/Roboto-Bold/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/Cuprum-Regular/cuprum-regular-webfont.eot');
+    src: url('../fonts/Cuprum-Regular/cuprum-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cuprum-Regular/cuprum-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Cuprum-Regular/cuprum-regular-webfont.woff') format('woff'),
+         url('../fonts/Cuprum-Regular/cuprum-regular-webfont.ttf') format('truetype'),
+         url('../fonts/Cuprum-Regular/cuprum-regular-webfont.svg#cuprumregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/Cuprum-Bold/cuprum-bold-webfont.eot');
+    src: url('../fonts/Cuprum-Bold/cuprum-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cuprum-Bold/cuprum-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Cuprum-Bold/cuprum-bold-webfont.woff') format('woff'),
+         url('../fonts/Cuprum-Bold/cuprum-bold-webfont.ttf') format('truetype'),
+         url('../fonts/Cuprum-Bold/cuprum-bold-webfont.svg#cuprumbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+
+}
+
+//Myriad Pro
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/Myriad-Pro/Myriad-Pro-Regular.eot');
+    src: url('../fonts/Myriad-Pro/Myriad-Pro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Myriad-Pro/Myriad-Pro-Regular.woff') format('woff'),
+    url('../fonts/Myriad-Pro/Myriad-Pro-Regular.ttf') format('truetype'),
+    url('../fonts/Myriad-Pro/Myriad-Pro-Regular.svg#o Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-04D9;
+}
+
+@font-face {
+  font-family: 'AgencyFB';
+  src: url('../fonts/Agency-Regular/AgencyFB-Reg.eot?#iefix') format('embedded-opentype'),  url('../fonts/Agency-Regular/AgencyFB-Reg.woff') format('woff'), 
+  url('../fonts/Agency-Regular/AgencyFB-Reg.ttf')  format('truetype'), 
+  url('../fonts/Agency-Regular/AgencyFB-Reg.svg#AgencyFB-Reg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+    font-family:'OpenSans';
+    src: url('../fonts/OpenSans/OpenSansLight.eot');
+	src: url('../fonts/OpenSans/OpenSansLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans/OpenSansLight.woff') format('woff'),
+		url('../fonts/OpenSans/OpenSansLight.ttf') format('truetype'),
+		url('../fonts/OpenSans/OpenSansLight.svg#Open Sans Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
+@import "../fonts/Icomoon/style.css";

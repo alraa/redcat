@@ -1,0 +1,57 @@
+.check-for-reg {
+    max-width: 320px;
+    margin: 0 auto 100px;
+    text-align: center;
+    padding-left: 22px;
+}
+
+.check-for-reg .check-for-reg__img{
+    height: 140px;
+    position: relative;
+    margin-bottom: 30px;
+	img {
+		display: block;
+		width: 123px; 
+		margin: 0 auto;
+	}
+}
+
+.check-for-reg .check-for-reg__text {
+    text-align: center;
+    margin-bottom: 55px;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(59, 59, 59);
+    line-height: 1.9;
+    text-align: center;
+}
+
+.check-for-reg .check-for-reg__btn {
+    display: block;
+    padding: 12px 10px;
+    background: #3b3b3b;
+	border: 1px solid transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Cuprum";
+    font-weight: 700;
+    width: 158px;
+    margin: 0 auto;
+    height: 40px;
+	transition: all .3s;
+	&:hover {
+		background: #fff;
+		color: #3b3b3b;
+		border: 1px solid #464646;
+	}
+}
+
+.send_crumbs{
+    padding: 35px 0 0 0;
+}
+
+@media screen and (max-width: 768px){
+    .check-for-reg{
+        padding: 0;
+    }
+}

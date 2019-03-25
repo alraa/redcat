@@ -1,0 +1,9 @@
+.check-for-reg { max-width: 266px; margin: 100px auto 100px; text-align: center; }
+
+.check-for-reg .check-for-reg__img { height: 140px; position: relative; margin-bottom: 25px; }
+
+.check-for-reg .check-for-reg__text { text-align: center; margin-bottom: 58px; }
+
+.check-for-reg .check-for-reg__btn { display: block; padding: 10px 10px; background: #3b3b3b; text-transform: uppercase; color: #fff; font-family: "Cuprum"; font-weight: 700; width: 158px; margin: 0 auto; }
+
+/*# sourceMappingURL=sendMessage.css.map */

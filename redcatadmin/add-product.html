@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+        <title>Add products</title>
+        <meta name='description' content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body class="loaded">
+        <!-- BEGIN BODY -->
+        <div class="main-wrapper">
+            <!-- BEGIN CONTENT -->
+            <main class="content">
+                <div class="layout">
+                    <div class="layout__sidebar">
+                        <div class="sidebar-top">
+                            <a href="#" class="btn btn-humb js-btn-sidebar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </a>
+                            <a href="#" class="logo"><img src="img/logo.png" alt=""><img src="img/logo-sm.png" class="logo-sm" alt=""></a>
+                        </div>
+                        <nav class="main-nav">
+                            <ul class="main-nav-list">
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-line-chart"></i></span>
+                                    <span class="main-nav-list__text">Аналитика</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link yellow-point">
+                                    <span class="main-nav-list__icon"><i class="icon-shopping-cart"></i></span>
+                                    <span class="main-nav-list__text">Заказы</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item active">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-document"></i></span>
+                                    <span class="main-nav-list__text">Товары</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-percentage"></i></span>
+                                    <span class="main-nav-list__text">Скидки</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-air-freight"></i></span>
+                                    <span class="main-nav-list__text">Доставка</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-previous"></i></span>
+                                    <span class="main-nav-list__text">Замена/Возврат</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-network_2"></i></span>
+                                    <span class="main-nav-list__text">Клиенты</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-postavshik_2"></i></span>
+                                    <span class="main-nav-list__text">Поставщик</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-update"></i></span>
+                                    <span class="main-nav-list__text">Контент</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-connection"></i></span>
+                                    <span class="main-nav-list__text">Пользователи</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-handshake"></i></span>
+                                    <span class="main-nav-list__text">Партнерство</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-website"></i></span>
+                                    <span class="main-nav-list__text">Дропшиппинг</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="layout__main">
+                        <div class="layout__main-overlay js-hide-sidebar"></div>
+                        <div class="layout__title layout__title_header">
+                            <header>
+                                <div class="cust-select">
+                                    <div class="cust-select-title js-cust-select">
+                                        <span>Red Cat Store (опт)</span>
+                                        <i class="icon-bottom-arrow"></i>
+                                    </div>
+                                    <div class="cust-select-dropdown">
+                                        <ul class="cust-select-list js-select-list">
+                                            <li class="cust-select-list__item">
+                                                <a href="#" class="cust-select-list__link">Red Cat Store (розница)</a>
+                                            </li>
+                                            <li class="cust-select-list__item active">
+                                                <a href="#" class="cust-select-list__link">Red Cat Store (опт)</a>
+                                            </li>
+                                            <li class="cust-select-list__item">
+                                                <a href="#" class="cust-select-list__link">Red Cat Store (дропишиппинг)</a>
+                                            </li>
+                                            <li class="cust-select-list__item">
+                                                <a href="#" class="cust-select-list__link">Все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="header-nav">
+                                    <li class="header-nav__item">
+                                        <a href="#" class="header-nav__link">Сайт</a>
+                                    </li>
+                                    <li class="header-nav__item">
+                                        <a href="#" class="header-nav__link yellow-point">Бек-офис</a>
+                                    </li>
+                                </ul>
+                                <div class="user">
+                                    <div class="user-title js-user-nav">
+                                        <div class="user-title__img"><img src="img/user.png" alt=""></div>
+                                        <div class="user-title__name">Владислав</div>
+                                        <div class="user-title__icon"><i class="icon-bottom-arrow"></i></div>
+                                    </div>
+                                    <ul class="user-nav">
+                                        <li class="user-nav__item">
+                                            <a href="#" class="user-nav__link">Сменить пароль</a>
+                                        </li>
+                                        <li class="user-nav__item">
+                                            <a href="#" class="user-nav__link">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="layout__title">
+                            <div class="title-flex ">
+                                <h2 class="bottom-line"><a href="#" class="link-back"><i class="icon-right-arrow_1"></i></a>Добавление товара</h2>
+                            </div>
+                        </div>
+                        <div class="layout__cont add-product-wrap">
+                            <form>
+                                <div class="add-product">
+                                    <div class="add-product__col add-product__col_1">
+                                        <div class="white-item">
+                                            <div class="box-form-row">
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Код товара</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Выберите цвет</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <div class="box-field__input">
+                                                        <label class="choice-color">
+                                                        <img src="img/choice-color.png" alt="">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label for="name-product" class="box-field__label">Название товара</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" id="name-product">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Категория</label>
+                                                <div class="box-field__input">
+                                                    <div class="cust-select cust-select-xs">
+                                                        <div class="cust-select-title js-cust-select">
+                                                            <span>Обувь</span>
+                                                            <i class="icon-bottom-arrow"></i>
+                                                        </div>
+                                                        <div class="cust-select-dropdown">
+                                                            <ul class="cust-select-list js-select-list">
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Одежда</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Кепки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Носки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item active">
+                                                                    <a href="#" class="cust-select-list__link">Обувь</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Парки</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Подкатегория</label>
+                                                <div class="box-field__input">
+                                                    <div class="cust-select cust-select-xs cust-select-right">
+                                                        <div class="cust-select-title js-cust-select">
+                                                            <span></span>
+                                                            <i class="icon-bottom-arrow"></i>
+                                                        </div>
+                                                        <div class="cust-select-dropdown">
+                                                            <ul class="cust-select-list js-select-list">
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Футболки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Поло</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Свитера</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Брюки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item active">
+                                                                    <a href="#" class="cust-select-list__link">Шапки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Рубашки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Гольфы</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Свитшоты</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Майки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <span class="cust-select-list__link">
+                                                                    <a href="#" class="btn-create js-not-select">+ Созать</a>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Бренд</label>
+                                                <div class="box-field__input">
+                                                    <div class="cust-select cust-select-xs">
+                                                        <div class="cust-select-title js-cust-select">
+                                                            <span>Обувь</span>
+                                                            <i class="icon-bottom-arrow"></i>
+                                                        </div>
+                                                        <div class="cust-select-dropdown">
+                                                            <ul class="cust-select-list js-select-list">
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Одежда</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Кепки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Носки</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item active">
+                                                                    <a href="#" class="cust-select-list__link">Обувь</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Парки</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-form-row">
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Ширина</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Высота</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Длинна</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Вес</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-form-row">
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Название</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Новое значение</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="list-check">
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" checked name="check_1">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Среднее</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" name="check_1">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Высокое</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" name="check_1">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Премиум</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="box-form-row-title">ПОЛ</div>
+                                            <ul class="list-check">
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" checked name="check_2">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Мужской</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" name="check_2">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Женский</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" name="check_2">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Унисекс</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="box-form-row-title">СЕЗОН</div>
+                                            <ul class="list-check">
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" checked name="check_3">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Зима</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" name="check_3">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Весна</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" name="check_3">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Лето</span>
+                                                    </label>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" name="check_3">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Осень</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="box-form-row-title">ОПТ</div>
+                                            <div class="box-form-row box-form-row-price">
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Себестоимость товара</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Цена на сайте</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-form-row-title">РОЗНИЦА</div>
+                                            <div class="box-form-row box-form-row-price">
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Себестоимость товара</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Цена на сайте</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-product__col add-product__col_2">
+                                        <div class="white-item">
+                                            <div class="box-field">
+                                                <label for="desc-product" class="box-field__label">Краткое описание</label>
+                                                <div class="box-field__input">
+                                                    <textarea  class="form-control" id="desc-product"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label for="full-desc-product" class="box-field__label">Полное описание</label>
+                                                <div class="box-field__input">
+                                                    <textarea  class="form-control form-control-big-desc" id="full-desc-product"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <div class="box-field__label">Добавить изображение и видео</div>
+                                                <div class="box-field__input">
+                                                    <label class="load-file"> 
+                                                    <i class="icon-add"></i>
+                                                    <input type="file">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="white-item">
+                                            <div class="box-field">
+                                                <label for="desc-product" class="box-field__label box-field__label_2">Фото поставщика</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" placeholder="Введтие название поставщика">
+                                                </div>
+                                                <div class="box-field__input">
+                                                    <label class="load-file load-file-full"> 
+                                                    <i class="icon-add"></i>
+                                                    <span class="load-file__text">Перетащите сюда фото либо загрузите с пк</span>
+                                                    <input type="file">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-product__col add-product__col_3">
+                                        <div class="add-product__col_tablet">
+                                            <div class="white-item">
+                                                <div class="box-field">
+                                                    <label for="desc-product" class="box-field__label">360 - обзор</label>
+                                                    <div class="box-field__input box-field__input_border">
+                                                        <label class="load-file load-file-sm"> 
+                                                        <i class="icon-add"></i>
+                                                        <input type="file">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add-product__col_tablet">
+                                            <div class="white-item">
+                                                <div class="box-field__label">Добавить образ</div>
+                                                <div class="box-field">
+                                                    <label class="box-field__label">Категория</label>
+                                                    <div class="box-field__input">
+                                                        <div class="cust-select cust-select-xs">
+                                                            <div class="cust-select-title js-cust-select">
+                                                                <span>Обувь</span>
+                                                                <i class="icon-bottom-arrow"></i>
+                                                            </div>
+                                                            <div class="cust-select-dropdown">
+                                                                <ul class="cust-select-list js-select-list">
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Одежда</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Кепки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Носки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item active">
+                                                                        <a href="#" class="cust-select-list__link">Обувь</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Парки</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-field">
+                                                    <label class="box-field__label">Подкатегория</label>
+                                                    <div class="box-field__input">
+                                                        <div class="cust-select cust-select-xs">
+                                                            <div class="cust-select-title js-cust-select">
+                                                                <span>Обувь</span>
+                                                                <i class="icon-bottom-arrow"></i>
+                                                            </div>
+                                                            <div class="cust-select-dropdown">
+                                                                <ul class="cust-select-list js-select-list">
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Одежда</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Кепки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Носки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item active">
+                                                                        <a href="#" class="cust-select-list__link">Обувь</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Парки</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-field">
+                                                    <div class="box-field__input box-field__input_flex">
+                                                        <div class="loaded-img"><img src="img/img-product.jpg" alt=""></div>
+                                                        <label class="load-file load-file-sm"> 
+                                                        <i class="icon-add"></i>
+                                                        <input type="file">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add-product__col_tablet">
+                                            <div class="white-item">
+                                                <div class="box-field__label">Возможно Вам может понравится</div>
+                                                <div class="box-field">
+                                                    <label class="box-field__label">Категория</label>
+                                                    <div class="box-field__input">
+                                                        <div class="cust-select cust-select-xs">
+                                                            <div class="cust-select-title js-cust-select">
+                                                                <span>Одежда</span>
+                                                                <i class="icon-bottom-arrow"></i>
+                                                            </div>
+                                                            <div class="cust-select-dropdown">
+                                                                <ul class="cust-select-list js-select-list">
+                                                                    <li class="cust-select-list__item active">
+                                                                        <a href="#" class="cust-select-list__link">Одежда</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Кепки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Носки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Обувь</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Парки</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-field">
+                                                    <label class="box-field__label">Подкатегория</label>
+                                                    <div class="box-field__input">
+                                                        <div class="cust-select cust-select-xs">
+                                                            <div class="cust-select-title js-cust-select">
+                                                                <span>Рубашка</span>
+                                                                <i class="icon-bottom-arrow"></i>
+                                                            </div>
+                                                            <div class="cust-select-dropdown">
+                                                                <ul class="cust-select-list js-select-list">
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Одежда</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Кепки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Носки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item active">
+                                                                        <a href="#" class="cust-select-list__link">Рубашка</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Парки</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-field box-field-last">
+                                                    <label class="box-field__label">Товар</label>
+                                                    <div class="box-field__input box-field__input_flex">
+                                                        <div class="cust-select cust-select-xs">
+                                                            <div class="cust-select-title js-cust-select">
+                                                                <span>Nike Airmax 3.0 Speed Only Harly</span>
+                                                                <i class="icon-bottom-arrow"></i>
+                                                            </div>
+                                                            <div class="cust-select-dropdown">
+                                                                <ul class="cust-select-list js-select-list">
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Одежда</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Кепки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">Носки</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item active">
+                                                                        <a href="#" class="cust-select-list__link">Обувь</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">Парки</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <label class="load-file load-file-xs"> 
+                                                        <i class="icon-add"></i>
+                                                        <input type="file">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add-product__col_tablet">
+                                            <button class="btn-big-black">Добавить товар</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="popup">
+                <div class="popup-overlay"></div>
+                <div class="window-open" id="popup-delete">
+                    <div class="window-open-cont">
+                        <p>Вы действительно хотите удалить данный товар?</p>
+                        <div class="popup-delete-btn">
+                            <a href="#" class="js-close-popup">Отмена</a>
+                            <a href="#" class="btn-black">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon-load"></div>
+        <!-- BODY EOF   -->
+        <script src="js/jquery-3.0.0.min.js"></script>      
+        <script src="js/jquery-migrate-1.4.1.min.js" ></script>
+        <script src="js/components/jquery.mCustomScrollbar.js" ></script>
+        <script src="js/components/slick.js" ></script>
+        <script src="js/custom.js" ></script>
+    </body>
+</html>

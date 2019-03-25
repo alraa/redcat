@@ -1,0 +1,54 @@
+/*registration*/
+.reg-nav:after { content: ""; display: table; clear: both; }
+
+.reg-nav .logo-text { font-size: 11px; font-family: "Cuprum"; font-style: italic; color: #808080; float: left; margin-left: 8.5%; }
+
+.reg-nav .reg-block { float: right; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Cuprum"; }
+
+.reg-nav .reg-enter { position: relative; margin-right: 25px; }
+
+.reg-nav .reg-enter:after { content: "/"; position: absolute; right: -16px; }
+
+.enter-popup-cross { position: absolute; width: 12px; height: 12px; top: -20px; right: 0; cursor: pointer; }
+
+.enter-popup-cross .top-line { position: absolute; top: 6px; left: -1px; height: 1px; width: 15px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.enter-popup-cross .bottom-line { position: absolute; top: 6px; left: -1px; height: 1px; width: 15px; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.enter-popup { position: fixed; background: rgba(255, 255, 255, 0.85); z-index: 22; top: 0; left: 0; right: 0; bottom: 0; display: none; }
+
+.enter-popup .enter-popup-form { position: relative; max-width: 390px; margin: 100px auto; border: 1px solid #222; background: #fff; padding: 15px 12px 25px 12px; }
+
+.enter-popup .enter-popup-form .enter-popup__header { font-family: "Cuprum"; font-size: 22px; color: #3b3b3b; text-align: center; padding-bottom: 10px; border-bottom: 1px solid #e8e8e8; margin-bottom: 35px; }
+
+.enter-popup .enter-popup-form .enter-input__header { color: #000; opacity: 0.38; font-size: 12px; padding-bottom: 5px; }
+
+.enter-popup .enter-popup-form .enter-input { max-width: 265px; margin: 0 auto 30px; width: 100%; position: relative; }
+
+.enter-popup .enter-popup-form .enter-input.eye:after { content: url(../img/eye.png); position: absolute; right: 0; top: 50%; }
+
+.enter-popup .enter-popup-form .enter-input input { border: none; border-bottom: 1px solid #888; padding: 8px 10px 6px 0; width: 100%; font-size: 16px; color: #000; }
+
+.enter-popup .enter-popup-form .enter-popup-passward-block { max-width: 265px; margin: 0 auto 30px; }
+
+.enter-popup .enter-popup-form .enter-popup-passward-block input[type="checkbox"] { display: none; }
+
+.enter-popup .enter-popup-form .enter-popup-passward-block label { cursor: pointer; position: relative; padding-left: 27px; font-weight: 300; font-size: 12px; color: #3b3b3b; letter-spacing: 0.4px; margin-bottom: 10px; }
+
+.enter-popup .enter-popup-form .enter-popup-passward-block label:before { content: ""; display: inline-block; width: 18px; height: 18px; margin-right: 10px; position: absolute; left: 0; bottom: 9px; background-color: #fff; border: 2px solid #767676; border-radius: 3px; top: 50%; margin-top: -9px; }
+
+.enter-popup .enter-popup-form .enter-popup-passward-block input[type="checkbox"]:checked + label:before { content: ""; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); width: 18px; height: 18px; border: none; background: url(../img/checkbox.png); background-repeat: no-repeat; background-position: center; }
+
+.enter-popup .enter-popup-form .enter-popup-passward-block { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.enter-popup .enter-popup-form .enter-popup-passward__link { font-weight: 300; font-size: 12px; color: #3b3b3b; text-align: right; }
+
+.enter-popup .enter-popup-form .enter-popup-info { color: #3b3b3b; font-size: 12px; font-weight: 300; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.enter-popup .enter-popup-form .enter-popup-info a { color: #2f3a89; font-size: 12px; font-weight: 300; text-decoration: underline; }
+
+.enter-popup .reg-popup__btn input { display: block; margin: 20px auto 0; padding: 10px 20px; text-transform: uppercase; background: #3b3b3b; font-weight: 700; font-family: "Cuprum"; color: #fcfcfc; width: 126px; }
+
+/*end registration*/
+
+/*# sourceMappingURL=registration.css.map */

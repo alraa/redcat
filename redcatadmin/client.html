@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+        <title>Client</title>
+        <meta name='description' content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body class="loaded">
+        <!-- BEGIN BODY -->
+        <div class="main-wrapper">
+            <!-- BEGIN CONTENT -->
+            <main class="content">
+                <div class="layout">
+                    <div class="layout__sidebar">
+                        <div class="sidebar-top">
+                            <a href="#" class="btn btn-humb js-btn-sidebar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </a>
+                            <a href="#" class="logo"><img src="img/logo.png" alt=""><img src="img/logo-sm.png" class="logo-sm" alt=""></a>
+                        </div>
+                        <nav class="main-nav">
+                            <ul class="main-nav-list">
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-line-chart"></i></span>
+                                    <span class="main-nav-list__text">Аналитика</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link yellow-point">
+                                    <span class="main-nav-list__icon"><i class="icon-shopping-cart"></i></span>
+                                    <span class="main-nav-list__text">Заказы</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-document"></i></span>
+                                    <span class="main-nav-list__text">Товары</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-percentage"></i></span>
+                                    <span class="main-nav-list__text">Скидки</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-air-freight"></i></span>
+                                    <span class="main-nav-list__text">Доставка</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-previous"></i></span>
+                                    <span class="main-nav-list__text">Замена/Возврат</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item active">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-network_2"></i></span>
+                                    <span class="main-nav-list__text">Клиенты</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-postavshik_2"></i></span>
+                                    <span class="main-nav-list__text">Поставщик</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-update"></i></span>
+                                    <span class="main-nav-list__text">Контент</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-connection"></i></span>
+                                    <span class="main-nav-list__text">Пользователи</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-handshake"></i></span>
+                                    <span class="main-nav-list__text">Партнерство</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                                <li class="main-nav-list__item">
+                                    <a href="#" class="main-nav-list__link">
+                                    <span class="main-nav-list__icon"><i class="icon-website"></i></span>
+                                    <span class="main-nav-list__text">Дропшиппинг</span>
+                                    <span class="main-nav-list__arrow"><i class="icon-right-arrow"></i></span>                              
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="layout__main">
+                        <div class="layout__main-overlay js-hide-sidebar"></div>
+                        <div class="layout__title layout__title_header">
+                            <header>
+                                <div class="cust-select">
+                                    <div class="cust-select-title js-cust-select">
+                                        <span>Red Cat Store (опт)</span>
+                                        <i class="icon-bottom-arrow"></i>
+                                    </div>
+                                    <div class="cust-select-dropdown">
+                                        <ul class="cust-select-list js-select-list">
+                                            <li class="cust-select-list__item">
+                                                <a href="#" class="cust-select-list__link">Red Cat Store (розница)</a>
+                                            </li>
+                                            <li class="cust-select-list__item active">
+                                                <a href="#" class="cust-select-list__link">Red Cat Store (опт)</a>
+                                            </li>
+                                            <li class="cust-select-list__item">
+                                                <a href="#" class="cust-select-list__link">Red Cat Store (дропишиппинг)</a>
+                                            </li>
+                                            <li class="cust-select-list__item">
+                                                <a href="#" class="cust-select-list__link">Все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="header-nav">
+                                    <li class="header-nav__item">
+                                        <a href="#" class="header-nav__link">Сайт</a>
+                                    </li>
+                                    <li class="header-nav__item">
+                                        <a href="#" class="header-nav__link yellow-point">Бек-офис</a>
+                                    </li>
+                                </ul>
+                                <div class="user">
+                                    <div class="user-title js-user-nav">
+                                        <div class="user-title__img"><img src="img/user.png" alt=""></div>
+                                        <div class="user-title__name">Владислав</div>
+                                        <div class="user-title__icon"><i class="icon-bottom-arrow"></i></div>
+                                    </div>
+                                    <ul class="user-nav">
+                                        <li class="user-nav__item">
+                                            <a href="#" class="user-nav__link">Сменить пароль</a>
+                                        </li>
+                                        <li class="user-nav__item">
+                                            <a href="#" class="user-nav__link">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="layout__title">
+                            <div class="title-flex ">
+                                <h2 class="bottom-line"><a href="#" class="link-back"><i class="icon-right-arrow_1"></i></a>Выпердяй Андрей Валерьевич</h2>
+                            </div>
+                        </div>
+                        <div class="layout__cont add-product-wrap">
+                            <form>
+                                <div class="add-product client-cont">
+                                    <div class="add-product__col add-product__col_1">
+                                        <div class="white-item">
+                                            <div class="box-field">
+                                                <label class="box-field__label">Фамилия</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="Выпердяй">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Имя</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="Андрей">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Отчество</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="Валерьевич">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Страна</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="Россия">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Индекс</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="1558785">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Адрес</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="ул. Московская 101, кв. 75">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Мобильный телефон</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="+7 (952) 368-42-15">
+                                                </div>
+                                            </div>
+                                            <div class="box-form-row">
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Рост, вес</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control" value="175см, 65 кг">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Размер ноги</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control" value="26.5см">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Пол</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control" value="Мужской">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Соц. сети</label>
+                                                <div class="box-form-row social-network">
+                                                    <div class="box-form-row__col box-form-row__col_1">
+                                                        <div class="box-field__input">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-form-row__col box-form-row__col_2">
+                                                        <div class="box-field__input">
+                                                            <div class="cust-select cust-select-xs">
+                                                                <div class="cust-select-title js-cust-select">
+                                                                    <span><span class="icon-vk"></span></span>
+                                                                    <i class="icon-bottom-arrow"></i>
+                                                                </div>
+                                                                <div class="cust-select-dropdown">
+                                                                    <ul class="cust-select-list js-select-list">
+                                                                        <li class="cust-select-list__item active">
+                                                                            <a href="#" class="cust-select-list__link"><span class="icon-vk"></span></a>
+                                                                        </li>
+                                                                        <li class="cust-select-list__item ">
+                                                                            <a href="#" class="cust-select-list__link"><span class="icon-facebook"></span></a>
+                                                                        </li>
+                                                                        <li class="cust-select-list__item">
+                                                                            <a href="#" class="cust-select-list__link"><span class="icon-instagram"></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-form-row__col box-form-row__col_3">
+                                                        <div class="box-field__input">
+                                                            <label class="load-file load-file-xs"> 
+                                                            <i class="icon-add"></i>
+                                                            <input type="file">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-product__col add-product__col_2">
+                                        <div class="white-item">
+                                            <div class="box-field">
+                                                <label class="box-field__label">E-mail</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value=" Retyp@gmail.com">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Выберите группу</label>
+                                                <div class="box-field__input">
+                                                    <div class="cust-select cust-select-xs cust-select-right">
+                                                        <div class="cust-select-title js-cust-select">
+                                                            <span>Только новые (опт)</span>
+                                                            <i class="icon-bottom-arrow"></i>
+                                                        </div>
+                                                        <div class="cust-select-dropdown">
+                                                            <ul class="cust-select-list js-select-list">
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Все розничные клиенты</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Только новые (розница)</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Только новые (опт)</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item active">
+                                                                    <a href="#" class="cust-select-list__link">Все оптовые клиенты</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Дропшиппинг</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Тип</label>
+                                                <div class="box-field__input">
+                                                    <div class="cust-select cust-select-xs cust-select-right">
+                                                        <div class="cust-select-title js-cust-select">
+                                                            <span>Опт</span>
+                                                            <i class="icon-bottom-arrow"></i>
+                                                        </div>
+                                                        <div class="cust-select-dropdown">
+                                                            <ul class="cust-select-list js-select-list">
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Розничный покупатель</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">Оптовик</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Дропшиппинг</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <span class="cust-select-list__link">
+                                                                    <a href="#" class="btn-create js-not-select">+ Созать</a>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Цена статуса дропшиппинг</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="150 000.00 р.">
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Дата регистрации</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="03/08/18">
+                                                </div>
+                                            </div>
+                                            <div class="box-form-row">
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Обороты</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col">
+                                                    <label class="box-field__label">Заказов</label>
+                                                    <div class="box-field__input">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="box-form-row__col box-form-row__col_loyalty">
+                                                    <label class="box-field__label">Лояльность</label>
+                                                    <div class="box-field__input">
+                                                        <div class="cust-select cust-select-xs cust-select-right">
+                                                            <div class="cust-select-title js-cust-select">
+                                                                <span></span>
+                                                                <i class="icon-bottom-arrow"></i>
+                                                            </div>
+                                                            <div class="cust-select-dropdown friendly-dropdown">
+                                                                <ul class="cust-select-list js-select-list">
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">1</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">2</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">3</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">4</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">5</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">6</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">7</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">8</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item">
+                                                                        <a href="#" class="cust-select-list__link">9</a>
+                                                                    </li>
+                                                                    <li class="cust-select-list__item ">
+                                                                        <a href="#" class="cust-select-list__link">10</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label box-field__label_justify">
+                                                <span>Способы оплаты</span>
+                                                <span>Срок действия</span>
+                                                </label>
+                                                <div class="box-form-row">
+                                                    <div class="box-form-row__col box-form-row__col_70">
+                                                        <div class="box-field__input box-field__input_with-eye">
+                                                            <input type="text" class="form-control" value="4XXX-XXXX-XXXX-1758" data-value="4356-1456-2875-1758">
+                                                            <a href="#" class="form-control-show js-show-code"><i class="icon-eye"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-form-row__col box-form-row__col_30">
+                                                        <div class="box-field__input">
+                                                            <input type="text" class="form-control text-right" value="12/2021">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-field">
+                                                <label class="box-field__label">Имя на карте</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control" value="VIPERDYAII ANDREW VALEREVICH">
+                                                </div>
+                                            </div>
+                                            <div class="notification-check__title">Cпособы уведомления</div>
+                                            <ul class="list-check notification-check">
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" checked name="check_1">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Новые поступления</span>
+                                                    </label>
+                                                    <div class="cust-select cust-select-xs">
+                                                        <div class="cust-select-title js-cust-select">
+                                                            <span>SMS</span>
+                                                            <i class="icon-bottom-arrow"></i>
+                                                        </div>
+                                                        <div class="cust-select-dropdown">
+                                                            <ul class="cust-select-list js-select-list">
+                                                                <li class="cust-select-list__item active">
+                                                                    <a href="#" class="cust-select-list__link">SMS</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">E-mail</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Нет</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" checked name="check_1">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Скидки и распродажи</span>
+                                                    </label>
+                                                    <div class="cust-select cust-select-xs">
+                                                        <div class="cust-select-title js-cust-select">
+                                                            <span>E-mail</span>
+                                                            <i class="icon-bottom-arrow"></i>
+                                                        </div>
+                                                        <div class="cust-select-dropdown">
+                                                            <ul class="cust-select-list js-select-list">
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">SMS</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item active">
+                                                                    <a href="#" class="cust-select-list__link">E-mail</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item">
+                                                                    <a href="#" class="cust-select-list__link">Нет</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-check__item">
+                                                    <label class="check-table">
+                                                    <input type="checkbox" name="check_1">
+                                                    <span class="check-table__icon"></span>
+                                                    <span class="label-text">Только для тебя</span>
+                                                    </label>
+                                                    <div class="cust-select cust-select-xs cust-select-top">
+                                                        <div class="cust-select-title js-cust-select">
+                                                            <span>Нет</span>
+                                                            <i class="icon-bottom-arrow"></i>
+                                                        </div>
+                                                        <div class="cust-select-dropdown">
+                                                            <ul class="cust-select-list js-select-list">
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">SMS</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item ">
+                                                                    <a href="#" class="cust-select-list__link">E-mail</a>
+                                                                </li>
+                                                                <li class="cust-select-list__item active">
+                                                                    <a href="#" class="cust-select-list__link">Нет</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="add-product__col add-product__col_3">
+                                        <div class="white-item">
+                                            <div class="table-list-wrap">
+                                                <div class="table-list-scroll js-scroll-horizont">
+                                                    <ul class="table-list table-order table-order-client">
+                                                        <li class="table-list__item table-list__item_title">
+                                                            <div class="col col_1"><i class="icon-danger"></i>#Заказа</div>
+                                                            <div class="col col_2">Создан</div>
+                                                            <div class="col col_3">Трек-код</div>
+                                                            <div class="col col_4">Сумма</div>
+                                                            <div class="col col_5">Статус</div>
+                                                            <div class="col col_6">Оплата</div>
+                                                            <div class="col col_7">Доставка</div>
+                                                        </li>
+                                                        <li class="table-list__item">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#R05489</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI38515</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS25916</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">4 380.00 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_orange"></span>
+                                                                <span class="status__text">Новый</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">CDEK предоплата</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#O78547</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3"></div>
+                                                            <div class="col col_4">5 260.18 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_dark-blue"></span>
+                                                                <span class="status__text">В обработке</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6">Не оплачен</div>
+                                                            <div class="col col_7">CDEK (наложенный платеж)</div>
+                                                        </li>
+                                                        <li class="table-list__item">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#D36547</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI33358</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS85474</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">415 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_light-green"></span>
+                                                                <span class="status__text">Согласован</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">Epacket</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#O96587</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI33358</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS85474</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">6 185.00 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_green"></span>
+                                                                <span class="status__text">Оплачен</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">EMS</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#R25478</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI38515</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS25916</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">4 380.00 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_dark-violet"></span>
+                                                                <span class="status__text">Получен</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">DHL</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#O63258</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI26520</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">5 260.18 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_blue"></span>
+                                                                <span class="status__text">Отправлен</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">Cargo – самолет</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#O58965</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI33358</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS85474</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">415 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_red"></span>
+                                                                <span class="status__text">В Москве</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">Cargo – грузовик</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#O54785</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI26520</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">5 260.18 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_dark-blue_2"></span>
+                                                                <span class="status__text">У клиента</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">Cargo – грузовое судно</div>
+                                                        </li>
+                                                        <li class="table-list__item order-canceled">
+                                                            <div class="col col_1"><i class="icon-close"></i><a href="#">#R05489</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI33358</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS85474</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">415 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_grey"></span>
+                                                                <span class="status__text">Отменен</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">CDEK (наложенный платеж)</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#R05489</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI38515</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS25916</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">4 380.00 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_green"></span>
+                                                                <span class="status__text">Оплачен</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">CDEK предоплата</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#O78547</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3"></div>
+                                                            <div class="col col_4">5 260.18 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_orange"></span>
+                                                                <span class="status__text">Новый</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6">Не оплачен</div>
+                                                            <div class="col col_7">CDEK (наложенный платеж)</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#D36547</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI33358</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS85474</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">415 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_dark-blue"></span>
+                                                                <span class="status__text">В обработке</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">Epacket</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#O96587</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI33358</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS85474</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">6 185.00 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_green"></span>
+                                                                <span class="status__text">Оплачен</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">EMS</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#R25478</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI38515</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li>RUS25916</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">4 380.00 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_dark-violet"></span>
+                                                                <span class="status__text">Получен</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">DHL</div>
+                                                        </li>
+                                                        <li class="table-list__item ">
+                                                            <div class="col col_1"><i class="icon-danger"></i><a href="#">#O63258</a></div>
+                                                            <div class="col col_2">25.08.18</div>
+                                                            <div class="col col_3">
+                                                                <ul class="track-code">
+                                                                    <li>CHI26520</li>
+                                                                    <li><i class="icon-right-arrow_1"></i></li>
+                                                                    <li></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col col_4">5 260.18 р.</div>
+                                                            <div class="col col_5">
+                                                                <span class="status">
+                                                                <span class="status__icon status__icon_blue"></span>
+                                                                <span class="status__text">Отправлен</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col col_6"><span class="paid">Оплачен</span></div>
+                                                            <div class="col col_7">Cargo – самолет</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="popup">
+                <div class="popup-overlay"></div>
+                <div class="window-open" id="popup-delete">
+                    <div class="window-open-cont">
+                        <p>Вы действительно хотите удалить данный товар?</p>
+                        <div class="popup-delete-btn">
+                            <a href="#" class="js-close-popup">Отмена</a>
+                            <a href="#" class="btn-black">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon-load"></div>
+        <!-- BODY EOF   -->
+        <script src="js/jquery-3.0.0.min.js"></script>      
+        <script src="js/jquery-migrate-1.4.1.min.js" ></script>
+        <script src="js/components/jquery.mCustomScrollbar.js" ></script>
+        <script src="js/components/slick.js" ></script>
+        <script src="js/custom.js" ></script>
+    </body>
+</html>
