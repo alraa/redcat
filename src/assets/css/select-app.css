@@ -1,0 +1,67 @@
+.select-country {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.select-country__head {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.38;
+}
+
+.select-country__value {
+  position: relative;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 10px 0 8px;
+  min-height: 35px;
+}
+
+.select-country__value.open {
+  border-bottom: 2px solid #464646;
+  margin-bottom: -1px;
+}
+
+.select-country__value:after {
+  content: "";
+  position: absolute;
+  border-top: 4px solid #787878;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  right: 4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.list-select {
+  list-style-type: none;
+  background-color: #fff;
+  box-shadow: 0 0 30px 9px rgba(0, 0, 0, 0.11);
+
+}
+
+.list-select__item {
+  padding: 6px 3px;
+}
+
+.list-select__item:hover {
+  background-color: #464646;
+  color: #fff;
+  opacity: .5;
+}
+
+.list-select__item.active {
+  background-color: #464646;
+  color: #fff;
+}
+
+.select-country__list {
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+  width: 100%;
+}

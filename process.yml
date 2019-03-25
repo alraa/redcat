@@ -1,0 +1,9 @@
+apps:
+  - script   : server.js
+    name     : 'redcatstore-front'
+    env    :
+      PORT: 6060
+      NODE_ENV: development
+    env_production:
+      PORT: 6060
+      NODE_ENV: production
